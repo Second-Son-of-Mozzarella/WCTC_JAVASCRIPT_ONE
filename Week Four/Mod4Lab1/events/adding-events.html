@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Events</title>
+    <link rel="stylesheet" href="/css/main.css">
+
+
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <h2>
+                Elijah Schultz
+            </h2>
+            <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a>Dom</a>
+                    <ul>
+                        <li>
+                            <a href="/dom/accessing-node.html">Accessing A Node</a>
+                        </li>
+                        <li>
+                            <a href="/dom/accessing-nodes.html">Accessing Nodes</a>
+                        </li>
+                        <li>
+                            <a href="/dom/looping-nodes.html">Looping NodeLists</a>
+                        </li>
+                        <li>
+                            <a href="/dom/family.html">Parents, Children, and Siblings</a>
+                        </li>
+                        <li>
+                            <a href="/dom/add-remove-nodes.html">Removing Nodes</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Events</a>
+                    <ul>
+                        <li>
+                            <a href="/events/adding-events.html">Adding Events</a>
+                        </li>
+                        <li>
+                            <a href="/events/event-flow.html">Event Flow</a>
+                        </li>
+                        <li>
+                            <a href="/events/event-object.html">The Event Object</a>
+                        </li>
+                        <li>
+                            <a href="/events/event-types.html">Event Types</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/try-it.html">Try it</a>
+                </li>
+            </ul>
+
+            <h3>
+                Mod 4 Lab 1
+            </h3>
+        </nav>
+        <header>
+
+        </header>
+        <main>
+            <div class="nav-spacer">
+                /* Do not add content--this is only for spacing the nav bar */
+            </div>
+            <div class="main-container">
+                <div class="container">
+                    <h1>Adding Events</h1>
+                    <p>
+                        There are three different ways to trigger events: HTML Attributes, DOM Handlers, and Event Listeners.  
+                    </p>
+
+
+                    <div class="content">
+                        <h2>HTML Attribute</h2>
+                        <p>
+
+                        </p>
+                        <div class="content-split">
+                            <div class="full">
+                                <h3>
+                                    Practice
+                                </h3>
+                                <p>
+                                    This is what we have been using but is considered bad practice as it is not modular and relies on both HTML code and JavaScript code. 
+                                </p>
+                                <input type="button" value="HTML OnClick Event Handler" onclick="htmlOnClick()">
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="content">
+                        <h2>DOM Handler</h2>
+                        <p>
+                            All modern browser understand this way of creating an event handler, but you can only attach one function to each event handler. 
+                        </p>
+                        <div class="content-split">
+                            <div class="full">
+                                <h3>
+                                    Practice
+                                </h3>
+                                <p>
+                                    Add an onclick event to the button element using a DOM handler. When clicked, a function should log &#x201C;DOM Handler Click.&#x201D; After that is working, try adding another onclick event to the button element using a DOM handler. When clicked, a seperate function should alert &#x201C;DOM Handler Click Two.&#x201D;
+                                </p>
+                                <input id="btnDomClick" type="button" value="DOM OnClick Event Handler" >
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="content">
+                        <h2>Event Listener</h2>
+                        <p>
+                            Event listeners are a more recent approach to handling events. They can deal with more than one function at a time but they are not supported in older browsers. 
+                        </p>
+                        <div class="content-split">
+                            <div class="full">
+                                <h3>
+                                    Practice
+                                </h3>
+                                <p>
+                                    Add an onclick to the button element using an event listener. When clicked, a function should log &#x201C;Event Listener Click.&#x201D; After that is working, try adding another onclick event to the button element using an event listener. When clicked, a sperate function should alert &#x201C;Event Listener Click Two.&#x201D; From now on, event listeners will be expected in all submissions.
+                                </p>
+                                <input id="btnListenerClick" type="button" value="OnClick Event Listener" >
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </main>
+        <footer>
+    </div>
+
+    </footer>
+    <script src="/js/events/adding-events.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html

@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    text-align: center;
+    background-color: #a1e08c;
+}
+
+nav>ul {
+    list-style-type: none;
+    display:flex; 
+    justify-content: center;
+}
+
+nav>ul>li { 
+    background-color: #a1e08c;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+nav>ul>li>a.active {
+    background-color: #8bc777; 
+}
+
+nav>ul>li:hover {
+    text-decoration: none;
+    background-color: #8bc777;
+    color: white
+}
+
+header, main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+main.extra {
+    max-width: 1200px;
+}
+
+header {
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+h4 {
+    margin: 10px 0;
+    color:grey;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+pre {
+    background-color: rgb(229, 229, 229);
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.example {
+    display: flex;
+    padding: 20px;
+}
+
+.example > .singleFlex {
+    flex: 1;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.example > .setup {
+    flex: 3;
+    border-right: 1px solid grey;
+    padding-right: 20px;
+}
+
+.example > .setup > label {
+    display: block;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+.example > .setup > input {
+    font-size: 16px;
+    padding: 5px;
+}
+
+.example > .setup > input[type="button"] {
+    padding: 7.5px;
+    display: block;
+    background-color: #a1e08c; 
+    border: none;
+    color:white;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.example > .setup > input[type="button"]:hover {
+    background-color: #8bc777;
+}
+
+.example > .result {
+    flex: 2;
+    padding-left: 20px;
+}

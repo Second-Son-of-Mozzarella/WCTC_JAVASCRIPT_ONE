@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="for.html" class="active">For Loops</a></li>
+            <li><a href="while.html">While Loops</a></li>
+            <li><a href="dowhile.html">Do While Loops</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>For Loops</h1>
+    </header>
+    <main>
+        <h3>For loop with a counter and hardcoded test expression</h3>
+        <hr>
+        <div class="example">
+            <div class="setup">
+                <p>
+                    This is and example of a for loop. The for loop has three parts, 
+                    an initialization expression, a test expression, and an update expression.
+                    The counter starts a 0 and runs 10 times from 0 to 9.
+                </p>
+            </div>
+            <div class="result">
+                <p id="forLoopResultOne"></p>
+            </div>
+        </div>
+
+        <h3>For loop with a counter and variable in the test expression</h3>
+        <hr>
+        <div class="example">
+            <div class="setup">
+                <p>
+                    In this for loop, an input is used to get a variable. The variable is used
+                    in the text expression to determine how many times the loop has been ran.
+                </p> 
+                <label for="forLoopTwoInput">Test Expression Value</label>
+                <input type="number" id="forLoopTwoInput">
+                <input type="button" value="Run the Loop" onclick="testTwo()">
+            </div>
+            <div class="result">
+                <p id="forLoopResultTwo"></p>
+            </div>
+        </div>
+
+        <h3>For loop with a two variables in the test expression</h3>
+        <hr>
+        <div class="example">
+            <div class="setup">
+                <p>
+                    In this for loop, two inputs are used. One is for the bottom limit test value 
+                    and the other is used for the top limit test value.
+                </p> 
+                <label for="forLoopThreeBaseInput">Test Base Value</label>
+                <input type="number" id="forLoopThreeBaseInput">
+                <label for="forLoopThreeTopInput">Test Top Value</label>
+                <input type="number" id="forLoopThreeTopInput">
+                <input type="button" value="Run the Loop" onclick="testThree()">
+            </div>
+            <div class="result">
+                <p id="forLoopResultThree"></p>
+            </div>
+        </div>
+
+        <h3>For loop with a variable for the incrementer</h3>
+        <hr>
+        <div class="example">
+            <div class="setup">
+                <p>
+                    This loop has three inputs: one for the base value, one for the top value, and 
+                    one for the update expression (incrementer).
+                </p> 
+                <label for="forLoopFourBaseInput">Test Base Value</label>
+                <input type="number" id="forLoopFourBaseInput">
+                <label for="forLoopFourTopInput">Test Top Value</label>
+                <input type="number" id="forLoopFourTopInput">
+                <label for="forLoopFourIncrementInput">Incrementer Value</label>
+                <input type="number" id="forLoopFourIncrementerInput">
+                <input type="button" value="Run the Loop" onclick="testFour()">
+            </div>
+            <div class="result">
+                <p id="forLoopResultFour"></p>
+            </div>
+        </div>
+
+
+        <h3>Looping through an array</h3>
+        <hr>
+        <div class="example">
+            <div class="setup">
+                <p>
+                    For loops can be used to iterate through arrays. In this example, the loop goes through
+                    an array of people objects and outputs their name and age.
+                </p> 
+                <input type="button" value="Run the Loop" onclick="testFive()">
+            </div>
+            <div class="result">
+                <div id="forLoopResultFive"></div>
+            </div>
+        </div>
+
+        
+        <h3>Looping through an array with a condition</h3>
+        <hr>
+        <div class="example">
+            <div class="setup">
+                <p>
+                    A for loop in conjuction with a conditional can be used to display specific information. For example, using a number input, 
+                    you can find people who are above a certain age.
+                </p> 
+                <label for="forLoopSixAge">Base Age</label>
+                <input type="number" id="forLoopSixAge">
+                <input type="button" value="Run the Loop" onclick="testSix()">
+            </div>
+            <div class="result">
+                <div id="forLoopResultSix"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/for.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Styles.css"> 
+    <title>SchultzWeekTwoLabOne: Math</title>
+</head>
+<body>
+    <header>
+        <h1><strong>Mod Two Lab One</strong></h1>
+    </header>
+
+    <nav>
+
+        <input id='NavButton' type="button" onclick="goToPath('/index.html')" value="Go Home" >
+
+    </nav>
+
+    <div id="wrapper">
+        <br>
+        <br>
+        <main>
+            <br>
+            <h3 id="RandomFull">RandomNumber: 0</h3>
+            <br>
+            <h4 id="ranNumbCapDisplay">Random Number Cap: 0</h4>
+            <input type="range" id="ranNumbCap" min="1" max="100" value = "25" onchange="ranNumb()">
+            <br>
+            <br>
+            <input type="button" value="Generate a Random number" onclick="newrannumb()">
+            <br>
+            <br>
+            
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random">Math random Documentation</a>
+                <br>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor">Math floor Documentation</a>
+                <br>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">Range Documentation</a>
+            
+            <br>
+            <br>
+             
+        </main>
+
+    </div>
+
+    <footer>
+
+
+    </footer>
+
+    <script src="js/Math.js"> </script>
+    <script src="js/Main.js"> </script>
+
+</body>
+</html>

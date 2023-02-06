@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing A Node</title>
+    <link rel="stylesheet" href="/css/main.css">
+
+
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <h2>
+                Elijah Schultz
+            </h2>
+            <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a>Dom</a>
+                    <ul>
+                        <li>
+                            <a href="/dom/accessing-node.html">Accessing A Node</a>
+                        </li>
+                        <li>
+                            <a href="/dom/accessing-nodes.html">Accessing Nodes</a>
+                        </li>
+                        <li>
+                            <a href="/dom/looping-nodes.html">Looping NodeLists</a>
+                        </li>
+                        <li>
+                            <a href="/dom/family.html">Parents, Children, and Siblings</a>
+                        </li>
+                        <li>
+                            <a href="/dom/add-remove-nodes.html">Removing Nodes</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Events</a>
+                    <ul>
+                        <li>
+                            <a href="/events/adding-events.html">Adding Events</a>
+                        </li>
+                        <li>
+                            <a href="/events/event-flow.html">Event Flow</a>
+                        </li>
+                        <li>
+                            <a href="/events/event-object.html">The Event Object</a>
+                        </li>
+                        <li>
+                            <a href="/events/event-types.html">Event Types</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/try-it.html">Try it</a>
+                </li>
+            </ul>
+
+            <h3>
+                Mod 4 Lab 1
+            </h3>
+        </nav>
+        <header>
+
+        </header>
+        <main>
+            <div class="nav-spacer">
+                /* Do not add content--this is only for spacing the nav bar */
+            </div>
+            <div class="main-container">
+                <div class="container">
+                    <h1>Accessing A Node</h1>
+                    <p>
+                        An element node represents the structure of an HTML element. The terms element and element node are used interchangeably. There are multiple ways to access an element node through the DOM. The following are a few of those ways.
+                    </p>
+
+
+                    <div class="content">
+                        <h2>getElementById('id')</h2>
+                        <p>
+                            Selects an individual element given the value of its id attribute. The HTML element must have an id attribute in order for it to be selectable. 
+                        </p>
+                        <div class="content-split">
+                            <div class="full">
+                                <h3>
+                                    Practice
+                                </h3>
+                                <p>
+                                    Select the following div element using the getElementById Method. This is what we have been using to select and manipulate elements in the DOM up to this point in the class. Output the entire element in a console.log. 
+                                </p>
+                                <div class="practiceClass" id="grabThisElement">
+                                    <p>#grabThisElement .practiceClass</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <h2>querySelector('css selector')</h2>
+                        <p>
+                            Selects an individual element given the value of its id attribute. The HTML element must have an id attribute in order for it to be selectable. 
+                        </p>
+                        <div class="content-split">
+                            <div class="full">
+                                <h3>
+                                    Practice
+                                </h3>
+                                <p>
+                                    Using the querySelector method, select the element with the id of &#x201C;idTwo&#x201D; using a CSS selector. Log this element. Use the same method to select the practice class. Log what it returns. Look at what the return value is. 
+                                </p>
+                                <div class="practiceClass" id="idOne">
+                                    <p>#idOne .practiceClass</p>
+                                </div>
+                                <div class="practiceClass" id="idTwo">
+                                    <p>#idTwo .practiceClass</p>
+                                </div>
+                                <div class="practiceClass" id="idThree">
+                                    <p>#idThree .practiceClass</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </main>
+        <footer>
+    </div>
+
+    </footer>
+    <script src="/js/dom/accessing-node.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+$(function(){
+    //tab button function
+
+    const $form = $('#viewForm');
+    const $list = $('#viewMembers');
+    console.log($list)
+    
+    $('#viewFormBtn').on('click', function(){
+            if(!$list.is('.hidden')){
+                $list.fadeOut(200, function(){
+                    $form.fadeIn(200);
+                })
+            }
+    });
+
+    $('#viewMembersBtn').on('click', function(){
+            if(!$form.is('.hidden')){
+                console.log($form);
+                $form.hide();
+                // $form.fadeOut(200, function(){
+                //     alert('complete');
+                //     // $list.fadeIn(200);
+                // })
+            }
+    });
+
+    console.log('howdy')
+
+})

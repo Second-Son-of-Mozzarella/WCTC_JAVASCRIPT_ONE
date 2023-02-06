@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod 3 Lab 1</title>
+    <link rel="stylesheet" href="css/Styles.css">
+</head>
+<body>
+    <header>
+        <h1>Testing Conditions</h1>
+    </header>
+    <nav>
+
+    </nav>
+    <main>
+        <div class="container">
+            
+            <div class="content">
+                <h2>Odd/Even</h2>
+                <p>Check if odd or even</p>
+                <label for="oddEven">Number</label>
+                <input id="oddEven" type="number" onchange="oddEven()">
+            </div>
+
+            <div class="content">
+                <h2>Confirm</h2>
+                <p id="confirmResualt"></p>
+                <input type="button" value="confirm" onclick="confirmation()">
+            </div>
+
+            <div class="content">
+                <h2>Text Truthy/Falsy</h2>
+                <input type="text" id="textTruthyFalsy" onchange="textTuthyandFalsy()">
+            </div>
+
+            <div class="content">
+                <h2>Numeric Truthy/Falsy</h2>
+                <input type="number" id="numbTruthyFalsy" onchange="numbTuthyandFalsy()">
+            </div>
+
+            <div class="content">
+                <h2>AM or PM</h2>
+                <input type="button" value = 'Check if its AM or PM' onclick="AMPM(document.getElementById('ampmResult'))">
+                <p id="ampmResult"></p>
+            </div>
+
+            <div class="content">
+                <h2>Logical And</h2>
+
+
+                <h3> Value One </h3>
+                
+                <input type="radio" id="LogicalAndValueOneTrue" name="LogicalAndValueOne" onchange="checkLogicalAnd()">
+                <label for="LogicalAndValueOneTrue"> True</label>
+                
+                <input type="radio" id="LogicalAndValueOneFalse" name="LogicalAndValueOne" onchange="checkLogicalAnd()" checked>
+                <label for="LogicalAndValueOneFalse"> False</label>
+
+                <h3> Value Two</h3>
+
+                <input type="radio" id="LogicalAndValueTwoTrue" name="LogicalAndValueTwo" onchange="checkLogicalAnd()" checked>
+                <label for="LogicalAndValueTwoTrue"> True</label>
+                
+                <input type="radio" id="LogicalAndValueTwoFalse" name="LogicalAndValueTwo" onchange="checkLogicalAnd()">
+                <label for="LogicalAndValueTwoFalse"> False</label>
+                <br>
+                <p id="logicalAndResults"></p>
+
+            </div>
+
+            <div class="content">
+                <h2>Logical Or</h2>
+
+                <h3> Value One </h3>
+                
+                <input type="radio" id="LogicalOrValueOneTrue" name="LogicalOrValueOne" onchange="checkLogicalOr()">
+                <label for="LogicalOrValueOneTrue"> True</label>
+                
+                <input type="radio" id="LogicalOrValueOneFalse" name="LogicalOrValueOne" onchange="checkLogicalOr()" checked>
+                <label for="LogicalOrValueOneFalse"> False</label>
+
+                <h3> Value Two</h3>
+
+                <input type="radio" id="LogicalOrValueTwoTrue" name="LogicalOrValueTwo" onchange="checkLogicalOr()" checked>
+                <label for="LogicalOrValueTwoTrue"> True</label>
+                
+                <input type="radio" id="LogicalTwoValueOneFalse" name="LogicalOrValueTwo" onchange="checkLogicalOr()">
+                <label for="LogicalTwoValueOneFalse"> False</label>
+                <br>
+                <p id="logicalTwoResults"></p>
+
+            </div>
+
+            <div class="content">
+                <h2>Switch Statement</h2>
+                <input type="text" id="selectStatmentvalue">
+                <select id = 'selectStatment'  onchange="selectStatment()">
+                <option disabled selected value>Select a output option</option>
+                <option value="alert">alert</option>
+                <option value="log">log</option>
+                <option value="textContent">text Content</option>
+
+                </select>
+                <p id="selectStatmentOutPut"></p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

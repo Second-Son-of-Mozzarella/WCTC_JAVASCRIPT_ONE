@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <main>
+        <div id="veiwTabs">
+
+            <input type="button" id="viewFormBtn" value="Add Students">
+            <input type="button" id="viewStudentsBtn" value="List Students">
+
+        </div>
+        <div id="veiwForm"> 
+            <form id="studentForm">
+                <label for="studentId" id="studentIdLabel">Id</label>
+                <input type="text" id="studentId" name="id" required>
+
+                <label for="studentUsername" id="studentUsernameLabel">Username</label>
+                <input type="text" id="studentUsername" name="username" required>
+
+                <label for="studentFirstName" id="studentFirstNameLabel">First Name</label>
+                <input type="text" id="studentFirstName" name="firstName" required>
+
+                <label for="studentLastName" id="studentLastNameLabel">Last Name</label>
+                <input type="text" id="studentLastName" name="lastName" required>
+
+                <label for="studentEmail" id="studentEmailLabel">Email</label>
+                <input type="email" id="studentEmail" name="email" required>
+
+                <label for="studentBirthday" id="studentBirthdayLabel">Birthday</label>
+                <input type="date" id="studentBirthday" name="birthday" required>
+
+                <input type="submit" value="Add Student">
+            </form>
+        </div>
+        <div id="veiwList" style="display: none">
+
+            <div class="student-list__filters">
+                
+                <label for="filterKeyword">Keyword Search: </label>
+                <input type="text" id="filterKeyword" name="Keyword">
+                
+
+                <label for="filterSort"> Sort By</label>
+                <select id="filterSort" name="sortby">
+                    <option value="id">id</option>
+                    <option value="username">Username</option>
+                    <option value="firstName">first name</option>
+                    <option value="lastName">last name</option>
+                    <option value="email">email</option>
+                    <option value="age">age</option>
+                    
+                </select>
+            </div>
+            <div class="student-list__students">
+
+
+
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

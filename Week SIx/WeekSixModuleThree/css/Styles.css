@@ -1,0 +1,33 @@
+#products{
+
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    
+}
+
+.product{
+    width: 200px;
+    text-align: center;
+}
+
+.product > img{
+
+    width: 200px;
+    height: 200pxpx;
+    object-fit: cover;
+}
+
+.current{
+
+    color: red;
+}
+
+#pagination{
+
+    width: max-content;
+    margin: 0, auto;
+    cursor: pointer;
+}

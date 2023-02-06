@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/main.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <nav>
+
+    </nav>
+    <main>
+        <div class="wrapper">
+            <div class="content">
+                <h1>Event Object</h1>
+                <p>Just as event listeners have event objects, so do jQuery events.</p>
+                <a href="https://api.jquery.com/category/events/event-object/">Documentation</a>
+            </div>
+            <div class="content">
+                <h2>Event Object from a Click</h2>
+                <p>Using the jQuery .on method, attach a click event to the button below. Alert the x and y position of the event. </p>
+                <input type="button" value="#clickEventTwo" id="clickEventTwo">
+            </div>
+
+            <div class="content">
+                <h2>Event Object Target</h2>
+                <p>Using the jQuery .on method, attach a click event to the div#eventTarget below. If the target has a class of "high," alert it.</p>
+                <div id="eventTarget">
+                    <div class="high"></div>
+                    <div class="low"></div>
+                    <div class="high"></div>
+                    <div class="low"></div>
+                    <div class="high"></div>
+                    <div class="low"></div>
+                    <div class="high"></div>
+                    <div class="low"></div>
+                    <div class="high"></div>
+                    <div class="low"></div>
+                </div>
+            </div>
+ 
+            <div class="content">
+                <h2>Event Object Closest</h2>
+                <p>Using the jQuery .on method, attach a click event to the div#eventClosest below. On click, find the closest div.low to the target and switch its class to high.</p>
+                <div id="eventClosest">
+                    <div class="high"> 
+                        <div class="low"></div>
+                    </div>
+                    <div class="low">
+                        <div class="high"></div>
+                    </div>
+                    <div class="high"> 
+                        <div class="low"></div>
+                    </div>
+                    <div class="low">
+                        <div class="high"></div>
+                    </div>
+                    <div class="high"> 
+                        <div class="low"></div>
+                    </div>
+                    <div class="low">
+                        <div class="high"></div>
+                    </div>
+                    <div class="high"> 
+                        <div class="low"></div>
+                    </div>
+                    <div class="low">
+                        <div class="high"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <h2>Event Object Prevent Default</h2>
+                <p>Using the jQuery .on method, attach a click event to the anchor below. Prevent the link from working. </p>
+                <a href="https://api.jquery.com/event.preventDefault/" id="preventDefault">#preventDefault</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/src/js/menu.js"></script>
+    <script src="/src/js/jQueryEvents/eventObject.js"></script>
+</body>
+</html>

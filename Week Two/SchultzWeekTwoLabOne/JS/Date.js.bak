@@ -1,0 +1,32 @@
+function getdate(){
+
+    let MilDate = Date.now();
+    let SecDate = MilDate / 1000;
+    let MinDate = SecDate / 60;
+    let HourDate = MinDate / 60;
+    let DayDate = HourDate / 24;
+    let MonthDate = DayDate / 30.437; // my attempt to adjust for diffrent mounth lengths is to use an avrege length for the year
+    let YearDate = MonthDate / 12;
+
+    let currentyear = Math.floor(1970 + YearDate);
+    document.getElementById('Year').textContent = "Year: " + currentyear;
+
+    let yearInMil = (currentyear - 1970) * 31557600000;
+    
+    let monthsleft = Math.floor((((((((MilDate - yearInMil) / 1000) / 60) / 60) / 24) / 30.437) + 1)); 
+
+    document.getElementById('Month').textContent = "Months: " + monthsleft;
+
+    document.getElementById('Month').textContent = "Months: " + MilDate.getdate();
+
+    
+
+
+    console.log("Mounth = " + MounthDate);
+    console.log("Day = " + DayDate);
+    console.log("Hour = " + HourDate);
+    console.log("Minute = " + MinDate);
+    console.log("Second = " + SecDate);
+    
+    
+}

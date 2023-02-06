@@ -1,0 +1,17 @@
+.invalid {
+    border-color: red;
+    outline-color: red;
+}
+
+input {
+    display: block;
+}
+.student{
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    margin: 5px;
+    padding: 5px;
+    max-width: 200px;
+}

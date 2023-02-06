@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery App</title>
+    <link rel="stylesheet" href="css/Styles.css"> 
+</head>
+<body>
+    <header><h1>Eli's Grocery Listinator</h1></header>
+    <nav></nav>
+    <main>
+        <div class="wrapper">
+            <div class="content-flex">
+                <div class="half-width">
+                    <form id="groceryForm" >
+                        <h2>Add Items</h2>
+                        <label for="itemName">Item Name: </label>
+                        <input name="itemName" id="itemName" type="text" required>
+                        
+                        <div id="quantity">
+                        <label for="itemQuantity">Item Quantity: </label>
+                        <input name="itemQuantity" id="itemQuantity" type="number" min="0"   required>
+                            <select id="itemUnit">
+                                <option value=" ">N/A</option>
+                                <option value="oz">oz</option>
+                                <option value="lbs">lbs</option>
+                                <option value="gal">gal</option>
+                                <option value="qrt">qrt</option>
+                            </select>
+                        </div>
+
+                        <label for="itemCategory">Item Categroy: </label>
+                        <select id="itemCategory">
+                            <option value="produce"> Produce</option>
+                            <option value="dairy"> Dairy</option>
+                            <option value="baking"> Baking</option>
+                            <option value="grains"> Grains</option>
+                            <option value="meat"> Meat</option>
+                            <option value="other"> Other</option>
+                        </select>
+                        <div id="itemSubmit">
+                        <input name="submit" type="submit" value="Add Item">
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="half-width">
+                        <h3 id="categoryHeader">produce</h3>
+                        <div id="produce" class="listCategory">
+
+                        </div>
+                        <h3 id="categoryHeader">dairy</h3>
+                        <div id="dairy" class="listCategory">
+                            
+                        </div>
+                        <h3 id="categoryHeader">baking</h3>
+                        <div id="baking" class="listCategory">
+                            
+                        </div>
+                        <h3 id="categoryHeader">grains</h3>
+                        <div id="grains" class="listCategory">
+                            
+                        </div>
+                        <h3 id="categoryHeader">meat</h3>
+                        <div id="meat" class="listCategory">
+                            
+                        </div>
+                        <h3 id="categoryHeader">other</h3>
+                        <div id="other" class="listCategory">
+                            
+                        </div>
+                    <input class="clearList" id="clearList" name="clear" type="button" value="Clear List">
+                    <input class="clearList" id="clearChecked" name="clear" type="button" value="Clear Check">
+                
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/Main.js"> </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/main.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <nav>
+
+    </nav>
+    <main>
+        <div class="wrapper">
+            <div class="content-flex">
+                <div class="half-width">
+                    <form id="toDoForm" >
+                        <label for="toDoTask">Task</label>
+                        <input name="task" id="toDoTask" type="text" required>
+
+                        <label for="toDoTaskDescription">Description</label>
+                        <textarea name="description" id="toDoTaskDescription"  rows="5" required></textarea>
+
+                        <input name="submit" type="submit" value="Add Item">
+                    </form>
+                </div>
+                <div class="half-width">
+                    <h2 class="tasks-header">Tasks:</h2>
+                    <div class="tasks">
+
+                    </div>
+                    <input id="removeDone" class="center" name="remove" type="button" value="Remove Completed Items">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/src/js/menu.js"></script>
+    <script src="/src/js/tryIt/toDoList.js"></script>
+</body>
+</html>

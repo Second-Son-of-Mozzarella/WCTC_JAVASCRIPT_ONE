@@ -1,0 +1,9 @@
+.invalid{
+
+    border-color: Red;
+    outline-color: darkred;
+}
+
+input {
+    display: block;
+}

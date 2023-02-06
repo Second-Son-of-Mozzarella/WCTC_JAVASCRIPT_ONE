@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schultz - Mod Two Assignment One</title>
+    <link rel="stylesheet" href="css/Styles.css"> 
+</head>
+<body>
+
+    <header>
+
+        <h1>Schultz - Mod Two Lab One</h1> 
+
+    </header>
+
+
+    <main>
+         
+        <div class="container">
+  
+              <div class="half-width">
+                  <h2>Student Form</h2>
+  
+                  <form action="javascript:addStudent();" id="studentForm">
+  
+                      <label for="Fname">First Name</label>
+                      <input type="text" id="Fname" >
+  
+                      <label for="Lname">Last Name</label>
+                      <input type="Text" id="Lname" required>
+  
+                      <label for="Program">Declared Program</label>
+                      <select id="Program" required>
+                          <option disabled selected value> Select a Program </option>
+                          <option value="IT - Computer Support Specialist">IT - Computer Support Specialist</option>
+                          <option value="IT - Cybersecurity Specialist">IT - Cybersecurity Specialist</option>
+                          <option value="IT - Data and Analytics Specialist">IT - Data and Analytics Specialist</option>
+                          <option value="IT - Network Specialist">IT - Network Specialist</option>
+                          <option value="IT - Web and Software Developer">IT - Web and Software Developer</option>
+                          <option value="Front End Web Development">Front End Web Development</option>
+                      </select>
+  
+                      <label for="EnrollDate">Enrollment Date</label>
+                      <input type="date" id="EnrollDate" required>
+  
+                      <input type="submit" value="Add Student">
+  
+                  </form>
+  
+              </div>
+  
+              <div class="half-width">
+  
+                  <h2>Enrolled Students</h2>
+                  <br>
+  
+                  <div id="students" class="students">
+  
+                      
+                      
+                  </div>
+              </div>
+          </div>
+      </main>
+
+      <footer>
+
+
+      </footer>
+    <script src="js/Main.js"> </script>
+</body>
+
+</html>

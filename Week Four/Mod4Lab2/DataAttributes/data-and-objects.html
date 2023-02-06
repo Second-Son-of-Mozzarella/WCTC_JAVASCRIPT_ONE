@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4: Lab 2</title>
+    <link rel="stylesheet" href="/src/css/main.css">
+
+
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            
+        </nav>
+        <header>
+
+        </header>
+        <main>
+            <div class="nav-spacer">
+                /* Do not add content--this is only for spacing the nav bar */
+            </div>
+            <div class="main-container">
+                <div class="container">
+                    <h1>Data Attributes and Objects</h1>
+                    <div class="content">
+                        <h2>Using Objects for Attributes</h2>
+                        <p>
+                            In the JavaScript file you will find a list of students imported from another file. Iterate through the list of students and for each student create a div with the class of &#x201C;student.&#x201D; Inside of the div, put an h3 element with the student name inside of it. Add a data attribute named &#x201C;student-id&#x201D; to the student div that has the value of the student&#x2019;s id. Append this div to the innerHTML of the div with the class of &#x201C;students.&#x201D; You can use template literal notation to construct a string over multiple lines and with variables: &#x60;&#x60;.
+                        </p>
+                        <div class="content-split">
+                            <div class="students">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2>Data Attributes and e.target</h2>
+                        <p>
+                            Add an event listener to the div above with the class of “students.” This event listener should be the type of “click.” Upon the event firing, make sure that the target is not the “students” div itself. If it isn’t the “students” div, get the “student” element that was clicked. Please note that if the user clicks a paragraph tag, the paragraph tag will be returned. To get the student div, try using the .closest() method on the target, with an argument of the student class css selector. Alert the Id of the selected student. 
+                        </p>
+                        <div class="content-split">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2>Doing Something with the Data</h2>
+                        <p>
+                            Modify your code to store the student that was last selected in the div below with the class of &#x201C;current-student.&#x201D; Iterate through the list of students and find the one that matches the selected it. Create an HTML element for that student and append it to the &#x201C;current-student&#x201D; div. You can use the same styling/innerHTML from the first exercise. Please note, there are better ways to sort arrays which will be discussed in future modules. Make sure to check your data types. 
+                        </p>
+                        <div class="content-split">
+                            <div class="current-student">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+    </div>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/src/js/menu.js"></script>
+    <script src="/src/js/DataAttributes/data-and-objects.js" type="module"></script>
+</body>
+</html>

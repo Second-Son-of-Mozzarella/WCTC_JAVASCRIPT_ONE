@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <nav>
+
+    </nav>
+    <main>
+        <div id="exercise-1" data-order="1">
+            <h2>Document Ready Function</h2>
+            <div class="work-area-container">
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>Ready Function</h3>
+                        <a href="https://learn.jquery.com/using-jquery-core/document-ready/" target="_blank">Documentation</a>
+                        <p>A page can't be manipulated safely until the document is "ready." jQuery detects this state of readiness for you. Code included inside $( document ).ready() will only run once the page Document Object Model (DOM) is ready for JavaScript code to execute.</p>
+<pre><code>$( document ).ready(function() {
+    console.log( "ready!" );
+});</pre></code>
+                        <p>You can use the shorthand $() for $( document ).ready().</p>
+<pre><code>$(function() {
+    console.log( "ready!" );
+});</pre></code>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="exercise-2" data-order="2">
+            <h2>The jQuery Function</h2>
+            <div class="work-area-container">
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>Using the jQuery Function</h3>
+                        <a href="https://api.jquery.com/jquery/" target="_blank">Documentation</a>
+                        <p>You can use the jQuery function to create a jQuery object.</p>
+                        <p>jQuery function:</p>
+<pre><code>jQuery()</pre></code>
+                        <p>jQuery function shorthand:</p>
+<pre><code>$()</pre></code>
+                        <p>You can use any CSS selector as a parameter inside of the jQuery function and it will find the matching element and return it as a jQuery object. </p>
+                        <p>Use the shorthand jQuery function to target the div with the id of "selectMe" and log the results.</p>                       
+                    </div>
+                    <div class="results">
+                        <h3>Target</h3>
+                        <div id="selectMe">
+                            #selectMe
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="exercise-3" data-order="3">
+            <h2>Basic jQuery Selectors</h2>
+            <div class="work-area-container">
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>Selecting Classes</h3>
+                        <p>You can use the jQuery function with CSS selectors. Try selecting the divs with the class of "ex3. "</p>                    
+                    </div>
+                    <div class="results">
+                        <h3>Target</h3>
+                        <div class="ex3">
+                            .ex3
+                        </div>
+                        <div class="ex3">
+                            .ex3
+                        </div>
+                        <div class="ex3">
+                            .ex3
+                        </div>
+                        <div class="ex3">
+                            .ex3
+                        </div>
+                    </div>
+                </div>
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>More Selectors</h3>
+                        <p>Much like the querySelector, you can use any CSS selector with the jQuery function. Try selecting all of the paragraph elements that are direct children (&#x3E;) of the class "ex3-2"</p>                    
+                    </div>
+                    <div class="results">
+                        <h3>Target</h3>
+                        <div class="ex3-2">
+                            .ex3-2
+                            <br>
+                            <br>
+                            <p>This is a paragraph element</p>
+                            <p>This is a second paragraph element</p>
+                            <p>This is a third paragraph element</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="exercise-4" data-order="4">
+            <h2>Content Methods</h2>
+            <div class="work-area-container">
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>.html() Method</h3>
+                        <a href="https://api.jquery.com/html/" target="_blank">Documentation</a>
+                        <p>Get the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched element.</p>                    
+                    </div>
+                </div>
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>.html() as a Getter on One Element</h3>
+                        <p>Use a jQuery function to select the element with the id of "htmlOne." Log the return value of this object's .html() method.</p>                    
+                    </div>
+                    <div class="results">
+                        <h3>Result</h3>
+                        <div id="htmlOne">
+                            #htmlOne
+                            <br>
+                            <br>
+                            <p>Log the result of the HTML</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>.html() as a Setter on One Element</h3>
+                        <p>Use a jQuery function to select the element with the id of "htmlOne." Use the .html() method to update the content of this element to be the following:</p>                    
+<pre><code>&#x3C;h4&#x3E;Updated HTML Content&#x3C;/h4&#x3E;</pre></code>
+                    </div>
+                    <div class="results">
+                        <h3>Result</h3>
+                        <div id="htmlTwo">
+                            #htmlTwo
+                        </div>
+                    </div>
+                </div>
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>.html() as a Setter on Multiple Elements</h3>
+                        <p>Use a jQuery function to select all of the elements with the class of "htmlElements." Use the .html() method to update the content of the object to be the following:</p>                    
+<pre><code>&#x3C;h4&#x3E;&#x3C;em&#x3E;More&#x3C;/em&#x3E; Updated HTML Content&#x3C;/h4&#x3E;</pre></code>
+                    </div>
+                    <div class="results">
+                        <h3>Result</h3>
+                        <div class="htmlElements">
+                            .htmlElements
+                        </div>
+                        <div class="htmlElements">
+                            .htmlElements
+                        </div>
+                        <div class="htmlElements">
+                            .htmlElements
+                        </div>
+                        <div class="htmlElements">
+                            .htmlElements
+                        </div>
+                    </div>
+                </div>
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>.html() on a Non-jQuery Object</h3>
+                        <p>Get the element with the id of "htmlFour" using the following:</p>                    
+<pre><code>let elementFour = document.getElementById("htmlFour");</pre></code>
+                        <p>Use the .html() method on this the elementFour object to update the content to the following:</p>
+<pre><code>&#x3C;h4&#x3E;Does this work?&#x3C;/h4&#x3E;</pre></code>                            
+                        <p>Note the results and fix it so the .html() method works</p>
+                    </div>
+                    <div class="results">
+                        <h3>Result</h3>
+                        <div id="htmlFour">
+                            #htmlFour
+                        </div>
+                    </div>
+                </div>
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>.text() Method</h3>
+                        <a href="https://api.jquery.com/text/" target="_blank">Documentation</a>
+                        <p>Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.</p>                    
+                    </div>
+                </div>
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>.text() Getting and Setting</h3>
+                        <p>Use the text method to log the text content of the unorder list with the id of "textMethodList."</p>  
+                        <p>Use the text() method to append  the paragraph with the id of "textMethodParagraph" with the text of " updated with the text() method."</p>  
+                    </div>
+                    <div class="results">
+                        <h3>Target</h3>                        
+                        <ul id="textMethodList">
+                            <li>List Item One</li>
+                            <li>List Item Two</li>
+                            <li>List Item Three</li>
+                            <li>List Item Four</li>
+                        </ul>
+                        <p id="textMethodParagraph">This is a paragraph</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="exercise-5" data-order="5">
+            <h2>Updating Styling</h2>
+            <div class="work-area-container">
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>.css() Method</h3>
+                        <a href="https://api.jquery.com/css/" target="_blank">Documentation</a>
+                        <p>Get the value of a computed style property for the first element in the set of matched elements or set one or more CSS properties for every matched element.</p>
+                    </div>
+                </div>
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>.css() as a Getter</h3>
+                        <p>Use the .css() method to get and log the background-color of the div with the id of "getMyCss."</p>
+                    </div>
+                    <div class="results">
+                        <h3>Target</h3>
+                        <div id="getMyCss">
+                            #getMyCss
+                        </div>
+                    </div>
+                </div>
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>.css() as a Setter</h3>
+                        <p>Use the .css() method to update the background-color of the div with the id of "updateMyCss" and set it to #D3D3D3</p>
+                    </div>
+                    <div class="results">
+                        <h3>Result</h3>
+                        <div id="updateMyCss">
+                            #updateMyCss
+                        </div>
+                    </div>
+                </div>
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>.addClass() Method</h3>
+                        <a href="https://api.jquery.com/addclass/" target="_blank">Documentation</a>
+                        <p>Adds the specified class(es) to each element in the set of matched elements.</p>
+                    </div>
+                </div>
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>Adding .active</h3>
+                        <p>Create CSS styling for a class called "active." This style should add a background color.</p>
+                        <p>Select the div with the id of "activeMe." Add the class of "active" using the .addClass() method.</p>
+                    </div>
+                    <div class="results">
+                        <h3>Result</h3>
+                        <div id="activateMe">
+                            #activateMe
+                        </div>
+                    </div>
+                </div>
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>.removeClass() Method</h3>
+                        <a href="https://api.jquery.com/removeclass/" target="_blank">Documentation</a>
+                        <p>Remove a single class, multiple classes, or all classes from each element in the set of matched elements.</p>
+                    </div>
+                </div>
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>Removing .active</h3>
+                        <p>Select the div with the id of "deactiveMe." Remove the class of "active" using the .removeClass() method.</p>
+                    </div>
+                    <div class="results">
+                        <h3>Result</h3>
+                        <div id="deactivateMe" class="active">
+                            #deactivateMe
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="exercise-6" data-order="6">
+            <h2>Simplified Loops</h2>
+            <div class="work-area-container">
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>.each() Method</h3>
+                        <a href="https://api.jquery.com/each/" target="_blank">Documentation</a>
+                        <p>Iterate over a jQuery object, executing a function for each matched element.</p>                    
+                    </div>
+                </div>
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>.each() Method</h3>
+                        <p>Each of the div's has a class "eachTest" and a paragraph element inside of it. Use a jQuery function to select each of these paragraph elements. Log the text of these paragraph elements prefixed with the following text: "The paragraph text is: "</p>                    
+                    </div>
+                    <div class="results">
+                        <h3>Target</h3>
+                        <div class="eachTest">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="eachTest">
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="eachTest">
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                        <div class="eachTest">
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="exercise-7" data-order="7">
+            <h2>Practicing Selectors</h2>
+            <div class="work-area-container">
+                <div class="work-area">
+                    <div class="requirements">
+                        <h3>https://flukeout.github.io/</h3>
+                        <a href="https://flukeout.github.io/" target="_blank">Website</a>
+                        <p>Use the link to go to the website. You will find a number of exercises using different CSS selectors. As we continue in jQuery, it is important that you know how to use CSS selectors. Complete all of the exercises. When you have completed all the exercises, click the hamburger menu in the top right corner and take a screenshot of all the completed exercises. Put this screenshot in the root folder of your Lab website and submit the Lab.</p>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

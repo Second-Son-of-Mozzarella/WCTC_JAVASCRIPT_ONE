@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Method</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/main.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <nav>
+
+    </nav>
+    <main>
+        <div class="wrapper">
+            <div class="content">
+                <h1>.on() Method</h1>
+                <p>Attach an event handler function for one or more events to the selected elements.</p>
+                <a href="https://api.jquery.com/on/">Documentation</a>
+            </div>
+            <div class="content">
+                <h2>Basic Click Event</h2>
+                <p>Using the jQuery .on method, attach a click event to the button below. The button should alert a message saying that it has been clicked. </p>
+                <input type="button" value="#clickEvent" id="clickEvent">
+            </div>
+            <div class="content">
+                <h2>Multiple Click Events</h2>
+                <p>Using the jQuery .on method, attach a click event to the buttons below. Have the buttons log "this."</p>
+                <input type="button" value=".clickEvent" class="clickEvent" data-number="1">
+                <input type="button" value=".clickEvent" class="clickEvent" data-number="2">
+                <input type="button" value=".clickEvent" class="clickEvent" data-number="3">
+            </div>
+            <div class="content">
+                <h2>Mouseenter Event</h2>
+                <p>Using the jQuery .on method, attach a mouseenter event to the div below that logs when the mouse has entered</p>
+                <div id="mouseEnter">
+                    #mouseEnter
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/src/js/menu.js"></script>
+    <script src="/src/js/jQueryEvents/onMethod.js"></script>
+</body>
+</html>

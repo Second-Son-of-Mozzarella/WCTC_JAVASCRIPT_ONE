@@ -1,0 +1,53 @@
+ //Get the values from the input
+
+    //Create a pet object and add it to the pet history
+
+    //Create new elements in JavaScript
+
+    //Add an onclick event that runs an anonymous function
+    //  to remove this element
+
+    //Add the correct classes to those elements
+
+    //Add content to those elements
+
+    //Add the two other elements to the main div
+
+    //Add these to the correct spot in the code
+
+    //Log the pet history
+
+
+    // creating an object with literal notation
+
+    let myObj = {
+
+        name: "My Object",
+        colour: "red"
+
+    }
+
+    myObj.colour = 'green';
+
+    // Constructor Notations
+
+    let myObj2 = new Object;
+    
+    myObj2.colour = "Red";
+
+    //myObj2.alertColour(){
+
+        //alert(this.colour);
+
+    //}
+
+    // Constructor notation with a named function
+
+    function Widget()
+    {
+
+        this.colour = red;
+
+    }
+    
+

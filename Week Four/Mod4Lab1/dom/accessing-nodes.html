@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Nodes</title>
+    <link rel="stylesheet" href="/css/main.css">
+
+
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <h2>
+                Elijah Schultz
+            </h2>
+            <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a>Dom</a>
+                    <ul>
+                        <li>
+                            <a href="/dom/accessing-node.html">Accessing A Node</a>
+                        </li>
+                        <li>
+                            <a href="/dom/accessing-nodes.html">Accessing Nodes</a>
+                        </li>
+                        <li>
+                            <a href="/dom/looping-nodes.html">Looping NodeLists</a>
+                        </li>
+                        <li>
+                            <a href="/dom/family.html">Parents, Children, and Siblings</a>
+                        </li>
+                        <li>
+                            <a href="/dom/add-remove-nodes.html">Removing Nodes</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Events</a>
+                    <ul>
+                        <li>
+                            <a href="/events/adding-events.html">Adding Events</a>
+                        </li>
+                        <li>
+                            <a href="/events/event-flow.html">Event Flow</a>
+                        </li>
+                        <li>
+                            <a href="/events/event-object.html">The Event Object</a>
+                        </li>
+                        <li>
+                            <a href="/events/event-types.html">Event Types</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/try-it.html">Try it</a>
+                </li>
+            </ul>
+
+            <h3>
+                Mod 4 Lab 1
+            </h3>
+        </nav>
+        <header>
+
+        </header>
+        <main>
+            <div class="nav-spacer">
+                /* Do not add content--this is only for spacing the nav bar */
+            </div>
+            <div class="main-container">
+                <div class="container">
+                    <h1>Accessing Nodes</h1>
+                    <p>
+                        In some cases, you will need multiple nodes in one object. A NodeList is a collection of nodes. The following examples return a NodeList instead of an individual node. 
+                    </p>
+
+
+                    <div class="content">
+                        <h2>getElementsByClassName('class')</h2>
+                        <p>
+                            Selects one or more elements given the value of their class attribute. The HTML must have a class attribute for it to be selectable.
+                        </p>
+                        <div class="content-split">
+                            <div class="full">
+                                <h3>
+                                    Practice
+                                </h3>
+                                <p>
+                                    Select the following elements using the getElementsByClassName. Log the results. Does it follow the expected behavior?
+                                <div class="practiceClass" >
+                                    <p>.practiceClass</p>
+                                </div>
+                                <div class="practiceClass" >
+                                    <p>.practiceClass</p>
+                                </div>
+                                <div class="practiceClass" >
+                                    <p>.practiceClass</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="content">
+                        <h2>querySelectorAll('css selector')</h2>
+                        <p>
+                            Uses CSS selector syntax to select one or more elements and returns all of those that match. 
+                        </p>
+                        <div class="content-split">
+                            <div class="full">
+                                <h3>
+                                    Practice One
+                                </h3>
+                                <p>
+                                    Using the querySelectorAll method, get all paragraph elements that are direct children of the class &#x201C;practiceClass.&#x201D; Log the results.
+                                </p>
+                                <div class="practiceClass" >
+                                    <p>.practiceClass</p>
+                                </div>
+                                <div class="practiceClass" >
+                                    <p>.practiceClass</p>
+                                </div>
+                                <div class="practiceClass" >
+                                    <p>.practiceClass</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-split">
+                            <div class="full">
+                                <h3>
+                                    Practice Two
+                                </h3>
+                                <p>
+                                    Modify the following three elements so that you can use a querrySelectorAll method to select only the paragraph elements following three divs. Log the results.
+                                </p>
+                                <div class="practiceClassTwo" >
+                                    <p>.practiceClass</p>
+                                </div>
+                                <div class="practiceClassTwo" >
+                                    <p>.practiceClass</p>
+                                </div>
+                                <div class="practiceClassTwo" >
+                                    <p>.practiceClass</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </main>
+        <footer>
+    </div>
+
+    </footer>
+    <script src="/js/dom/accessing-nodes.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html

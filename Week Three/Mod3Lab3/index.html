@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod 3 Lab 2</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Custom font via Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="menu">
+                <div class="logo">
+                    <span class="logo-line-one">Elijah Schultz</span>
+                    <span class="logo-line-two">Mod 3 Lab 3</span>
+                </div>
+
+                <ul class="items">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="debugging.html">Debugging Exercises</a></li>
+                    <li><a href="objects.html">Looping Objects</a></li>
+                    <li><a href="extras.html">Extra Points</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="wrapper">
+            <h1>
+                Mod 3 Lab 3
+            </h1>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <h2>
+                What is this Lab?
+            </h2>
+            <p>
+                This lab is intended to give us more practice when it comes to using for loops. The bulk of this lab will focus on working with existing code that has problems in it. You will debug six exercises, trying to figure out where the problems are occurring.
+            </p>
+            <p>
+                You will also practice looping with objects, including how to style and sort those objects.
+            </p>
+            <p>
+                Lastly, this lab will show a few new concepts that will be used in future modules. There are a few exercises around these concepts that are not required, but will give you extra points if completed. 
+            </p>
+            <br>
+            <br>
+            <div class="problem">
+                <div class="problem-info no-border">
+                    <span class="problem-header">Event Listeners</span>
+                    <br>
+                    <p>
+                        This loop should get the value from the input and upon clicking the button the results 1 through 20 should be output in the results sections.  
+                    </p>
+                    <br>
+                    <span class="problem-category">Event Listener Syntax</span>
+                    <pre>element.addEventListener('event', functionCall);</pre>
+                    
+                    <br>
+                    <br>
+                    <span class="problem-category">Example OnClick Listener</span>
+                    <pre>document.getElementById('listenerExampleButton').addEventListener('click', myButtonClick);</pre>
+                    <br>
+                    <br>
+                    <input type="button" value="This button has no on click attribute" id="listenerExampleButton">
+                </div>
+            </div>
+            <div class="problem">
+                <div class="problem-info no-border">
+                    <span class="problem-header">jQuery</span>
+                    <br>
+                    <p>
+                        jQuery is a JavaScript library that is meant to simplify much of what we do. To use jQuery, you need to include the library in your site, either by having all of the library files on your site, or linking to an online CDN (Content Delivery Network) that hosts the library files. Google hosts jQuery and you will typically see this script added to link to the Google jQuery files.
+                    </p>
+                    <br>
+                    <span class="problem-category">Link to Google's jQuery CDN</span>
+                    <pre>&lt;script&nbsp;src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js&quot;&gt;&lt;/script&gt;</pre>
+                    
+                    <br>
+                    <br>
+                    <span class="problem-category">Example OnClick Listener</span>
+                    <pre>$(document).ready(function(){
+    /* jQuery and JavaScript code here */              
+});</pre>
+                    <br>
+                    <br>
+                    <p>
+                        Lastly, you can use the jQuery library. You can select elements using the jQuery selector syntax $() in conjunction with css selectors. 
+                    </p>
+                    <span class="problem-category">Selecting the button with the id of jQueryExampleButton</span>
+                    <pre>$('#jQueryExampleButton');</pre>
+                    <br>
+                    <span class="problem-category">And this adds an event listener to that button via jQuery</span>
+                    <pre>$('#jQueryExampleButton').click(function(){alert("Using jQuery")}); </pre>
+                    <br>
+                    <br>
+                    <input type="button" value="This button listens via jQuery" id="jQueryExampleButton">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

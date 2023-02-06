@@ -1,0 +1,32 @@
+:root {
+    /* colors */
+    --cust-main-color: #589AAF;
+    --cust-accent-color: #325b67;
+    --cust-text-color: #323232;
+    --cust-text-color-reverse: #FFFFFF;
+    --cust-link-color: #CA3435;
+    --cust-background-color: #EDEDED;
+
+    /* widths */
+    --cust-max-width: 900px;
+
+    /* typefaces */
+    --cust-typeface: 'Oswald', sans-serif;
+
+}
+
+.student{
+    background-color: var(--cust-background-color);
+    padding: 5px;
+    margin: 7px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--cust-main-color);
+
+    
+
+}
+.student-name{
+    font-weight: bold;
+    color: var(--cust-accent-color);
+}

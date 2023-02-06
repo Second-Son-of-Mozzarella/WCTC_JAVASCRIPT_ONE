@@ -1,0 +1,169 @@
+
+
+/*Zeroing out margin and padding*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+/* my own CSS */
+
+h1{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #6C7A8C;
+    color: #F2EFE9;
+    
+}
+
+main{
+    padding: 30px;
+    
+}
+
+body{
+
+    background-color: #D9D6D0;
+}
+
+
+/*Selecting inputs, selects, and labels in any form*/
+form input, form select, form label {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form label{
+
+    padding: 2px;
+    font-weight: bold;
+}
+
+form input[type='submit']{
+
+    cursor: pointer;
+    margin-top: 5px;
+    background-color: #BF7160;
+    color: #F2EFE9;
+    border-radius: 5px;
+    padding: 3px;
+    font-weight: bold;
+}
+form input[type='submit']:hover{
+
+    padding: 3.5px;
+    background-color: #995b4d;
+
+
+}
+
+
+form select{
+
+    cursor: pointer;
+    margin-top: 5px;
+    background-color: #BF7160;
+    color: #F2EFE9;
+    border-radius: 5px;
+    padding: 3px;
+    font-weight: bold;
+    border-width: 0px;
+}
+
+form input[type='text']{
+
+    cursor: text;
+
+}
+form input[type='date']{
+
+    cursor: text;
+
+}
+
+
+form {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    padding: 2px;
+    text-decoration: underline;
+}
+
+/*A div called container to hold the main content*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #BF7160;
+    display: flex;
+    gap: 50px;
+    border-radius: 20px;
+}
+
+/*Two divs for the .container that will each take up
+half of the container*/
+.container .half-width {
+    flex: 1;
+    padding: 50px;
+    background-color: #F2EFE9;
+    border-radius: 20px;
+}
+
+.students {
+    background-color: #FFFFFF;
+    overflow-y: scroll;
+    max-width: 300px;
+    max-height: 300px;
+    min-height: 50px;
+    margin: 0 auto;
+    transition: max-height 0.25s ease-in;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.students .student {
+    background-color: #6C7A8C;
+    padding: 5px;
+    max-width: 250px;
+    margin: 10px auto;
+    color: #F2EFE9;
+    border-radius: 10px;
+}
+
+
+.students .student:hover{
+    background-color: #7c8b9f;
+    padding: 5.5px;
+
+}
+
+.students .Full-Name{
+
+    font-size: large;
+    font-weight: bold;
+
+}
+
+/*stacking the .half-width divs below 900px*/
+@media only screen and (max-width: 900px) {
+
+    .container {
+        display: block;
+    }  
+
+    .container .half-width:not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
+

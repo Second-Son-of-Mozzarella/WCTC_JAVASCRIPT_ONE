@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4: Lab 2</title>
+    <link rel="stylesheet" href="/src/css/main.css">
+
+
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            
+        </nav>
+        <header>
+
+        </header>
+        <main>
+            <div class="nav-spacer">
+                /* Do not add content--this is only for spacing the nav bar */
+            </div>
+            <div class="main-container">
+                <div class="container">
+                    <h1>Data Attributes</h1>
+                    <div class="content">
+                        <h2>What are they?</h2>
+                        <p>
+                            Data attributes are attributes that can be added to a HTML element to store some type of value. The syntax for data attributes is quite simple: <code>data-*</code> where the <code>*</code> represents any name that you want to give to the data. 
+                        </p>
+                        <p>
+                            One of the common usages for a data attribute is adding identification to an element so it can be used inside of JavaScript. <code>data-id= "4"</code> would give an element an data attribute named id with a value of 4.
+                        </p>
+                        <p>
+                            Each element inside of JavaScript has access to the <code>.dataset</code> property which gives access to the data attributes. For example, if I wanted to get the value of the id data attribute, I could access the element and look at the <code>.dataset</code> property which will have the <code>.id</code> property: <code>elementSelector.dataset.id</code>
+                        </p>
+                        <p>
+                            <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes" target="_blank">Documentation</a>
+                        </p>
+                    </div>
+                    <div class="content">
+                        <h2>Practice One</h2>
+                        <p>
+                            Look at the following div with the class of &#x201C;dataPracticeOne.&#x201D Select this div and log its data attribute named &#x201C;id.&#x201D; 
+                        </p>
+                        <div class="content-split">
+                            <div class="full">
+                                <div class="dataPracticeOne" data-id="10">
+                                    <p>.dataPracticeOne</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2>Practice Two</h2>
+                        <p>
+                            Select the following divs with the class of &#x201C;dataPracticeTwo.&#x201D; Each div has two data attributes. One is named &#x201C;id&#x201D; and one is named &#x201C;div-position.&#x201D; Log both of these attributes for each div.
+                        </p>
+                        <div class="content-split">
+                            <div class="full">
+                                <div class="dataPracticeTwo" data-id="34" data-div-position="1">
+                                    <p>.dataPracticeTwo</p>
+                                </div>
+                            </div>
+                            <div class="full">
+                                <div class="dataPracticeTwo" data-id="84" data-div-position="2">
+                                    <p>.dataPracticeTwo</p>
+                                </div>
+                            </div>
+                            <div class="full">
+                                <div class="dataPracticeTwo" data-id="123" data-div-position="3">
+                                    <p>.dataPracticeTwo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+    </div>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/src/js/menu.js"></script>
+    <script src="/src/js/DataAttributes/data-attributes.js"></script>
+</body>
+</html>

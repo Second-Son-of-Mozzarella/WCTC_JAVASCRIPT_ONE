@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Six Assigment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <link rel="stylesheet" href="css/Styles.css">
+
+
+</head>
+<body>
+    <header><h1>Eli's Gym</h1></header>
+    <nav>
+        
+            <div id="viewFormBtn">
+                Add Members
+            </div>
+            <div id="viewMembersBtn">
+                Veiw List
+            </div>
+
+        
+    </nav>
+    <main>
+
+        <div class="wrapper">
+            <div class="content-flex">
+
+                <div id="viewForm" class="panel">
+                        <h2> Add a member</h2>
+                        <form id="memberForm">
+                            
+                            <label for="memberUsername" id="memberUsernameLabel">Username</label>
+                            <input type="text" id="memberUsername" name="username" required>
+            
+                            <label for="memberFirstName" id="memberFirstNameLabel">First Name</label>
+                            <input type="text" id="memberFirstName" name="firstName" required>
+            
+                            <label for="memberLastName" id="memberLastNameLabel">Last Name</label>
+                            <input type="text" id="memberLastName" name="lastName" required>
+
+                            <label for="memberBirthDay" id="memberBirthDayLabel">Date of Birth</label>
+                            <input type="date" id="memberBirthday" name="Date of Birth" required>
+
+                            <label for="memberEnrollDate" id="memberEnrollDateLabel">Enrollment Date</label>
+                            <input type="date" id="memberEnroll" name="Enroll Date" required>
+                            <br>
+                            <input type="submit" value="Add member">
+                        </form>
+                    
+                </div>
+                <div id="viewMembers" style="display: none">
+
+                    <div class="member-list__filters">
+                        <span class="material-symbols-outlined">search</span>
+                        <label for="filterKeyword"></label>
+                        <input type="text" id="filterKeyword" name="Keyword">
+                        
+                        <br>
+        
+                        <span class="material-symbols-outlined">
+                            sort_by_alpha
+                            </span>
+                        <select id="filterSort" name="sortby">
+                            <option value="idAsc">id Asc</option>
+                            <option value="idDec">id Desc</option>
+                            <option value="usernameAsc">Username asc</option>
+                            <option value="usernameDec">Username dec</option>
+                            <option value="firstNameAsc">first name asc</option>
+                            <option value="firstNameDec">first name dec</option>
+                            <option value="lastNameAsc">last name asc</option>
+                            <option value="lastNameDec">last name dec</option>
+                            <option value="enrollAsc">enroll asc</option>
+                            <option value="enrollDec">enroll dec</option>
+                            <option value="ageAsc">age asc</option>
+                            <option value="ageDec">age dec</option>
+                            
+                        </select>
+                        
+                        <div class="member-list__students">
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            
+        </div>
+    </main>
+    <footer></footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html> <!-- Exactly 100 line Whoo Hoo!!-->

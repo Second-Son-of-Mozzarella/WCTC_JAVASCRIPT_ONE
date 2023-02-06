@@ -1,0 +1,142 @@
+:root {
+    --cust-color-main: #5bc0eb;
+    --cust-color-accent:  #1A535C;  /* main color but lighter or darker  https://www.w3schools.com/colors/colors_picker.asp */
+    --cust-color-text: #323232;
+    --cust-color-text-reverse: #FFE66D;
+    --cust-color-link: #49d49d;
+    --cust-color-background: #F6F4F5;
+
+    /* widths */
+    --cust-max-width: 900px;
+    --cust-nav-width: 170px;
+
+    /* typefaces */
+    --cust-typeface: 'Roboto Slab', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h2 {
+    background-color: var(--cust-color-main);
+    transition: background-color .5s;
+    color: var(--cust-color-text-reverse);
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+li {
+    margin-left: 20px
+}
+
+
+a {
+    color:var(--cust-color-link);
+}
+
+pre {
+    white-space: white-space;
+    background: rgba(255,255,255,.25);
+    user-select: all;
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto 10px auto;
+}
+
+h3:not(:has(+ a)) {
+    display: block;
+    margin-bottom: 10px;
+}
+
+a, p, ul {
+    display: block;
+    margin-bottom: 10px;
+}
+
+div[id^="exercise-"] {
+    border-bottom: .1px solid var(--cust-color-text-reverse);
+}
+
+div[id^="exercise-"]::before {
+    content:  attr(data-order) ;
+    pointer-events:none;
+    position: absolute;
+    left: 30px;
+    font-size: 60px;
+    opacity: .25;
+    font-weight: bold;
+    color: var(--cust-color-text-reverse);
+}
+
+div[id^="exercise-"]>.work-area-container {
+    background-color: var(--cust-color-background);
+    display: none;
+}
+
+div[id^="exercise-"]>h2.selected-exercise {
+    background-color: var(--cust-color-link);
+}
+
+.work-area {
+    display: flex;
+    gap: 30px;
+}
+
+.work-area>.requirements {
+    flex: 4;
+    padding: 30px 30px 30px 10%;
+}
+
+.work-area>.requirements:only-child {
+    flex: 1;
+    padding-left:10%;
+    padding-right:10%;
+}
+
+.work-area>.requirements>h3,
+.work-area>.requirements>p,
+.work-area>.results>h3,
+.work-area>.results>p {
+    color:var(--cust-color-text);
+}
+
+.work-area>.results {
+    flex: 3;
+    background-color: rgba(255,255,255,.65);
+    padding:30px 10% 30px 30px;
+}
+
+.work-area:not(:only-child):not(:last-child) {
+    border-bottom: 1px solid var(--cust-color-text);
+}
+
+
+.results>div {
+    border-radius: 5px;
+    border: 5px solid var(--cust-color-accent);
+    color: var(--cust-color-accent);
+    font-weight: bold;
+    padding: 10px;
+    max-width: max-content;
+    display: inline-block;
+    margin: 10px;
+}
+
+.results>div>h4 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#getMyCss {
+    background-color: #ffffff;
+}
+
+.active{
+
+    background-color: var(--cust-color-link);
+}

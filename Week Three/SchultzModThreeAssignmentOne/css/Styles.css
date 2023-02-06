@@ -1,0 +1,122 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root{
+
+    --background-Colour: #EDDFD1;
+    --pzazz-Colour: #000000;
+    --text-Colour: #383536;
+
+    --Type-Face: 'Oswald', sans-serif;
+
+}
+
+body{
+
+    background-color: var(--background-Colour);
+}
+
+
+header{
+
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    background-color: white;
+    background-image: linear-gradient(to right, green , white, red);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 80%;
+    max-width: 700px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+    color: var(--text-Colour);
+
+}
+
+header #pazazz{
+    color: var(--pzazz-Colour);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#returantForm{
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+    border-style: solid;
+    border-width: 5px;
+    background-color: white;
+    font-weight: bold;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: small;
+
+}
+
+select{
+
+    background-color: rgb(255, 255, 255);
+    padding: 2px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+
+}
+
+select:hover{
+
+    background-color: rgb(204, 204, 204);
+}
+
+input[type='button']{
+
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+
+}
+input[type='button']:hover{
+
+    background-color: rgb(204, 204, 204);
+
+}
+
+#resturantResults{
+
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+    border-style: solid;
+    border-width: 5px;
+    background-color: white;
+    font-weight: bold;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;   
+}
+
+#titleCard{
+
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+
+
+}

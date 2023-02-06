@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="for.html">For Loops</a></li>
+            <li><a href="while.html" class="active">While Loops</a></li>
+            <li><a href="dowhile.html">Do While Loops</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>
+            While Loops
+        </h1>
+    </header>
+    <main>
+        <h3>While loop that continues with user confirmation</h3>
+        <hr>
+        <div class="example">
+            <div class="setup">
+                <p>
+                    This while loop is a pre-test loop. It will ask for user confirmation and then run the loop. The code block inside the while loop may never run if the user selects cancel immediately.  
+                </p>
+                <input type="button" value="Start Looping" onclick="whileTestOne()">
+            </div>
+            <div class="result">
+                <p id="whileLoopResultOne"></p> 
+            </div>
+        </div>
+
+        <h3>While loop that counts to a value</h3>
+        <hr>
+        <div class="example">
+            <div class="setup">
+                <p>
+                    You can use a while loop to iterate a certain number of times, much like a for loop. In fact, a while loop is a simplified for loop. 
+                </p>
+                <label for="whileLoopTwoCount">Count to</label>
+                <input type="number" id="whileLoopTwoCount">
+                <input type="button" value="Start Looping" onclick="whileTestTwo()">
+            </div>
+            <div class="result">
+                <p id="whileLoopResultTwo"></p> 
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="js/while.js"></script>
+</body>
+</html>

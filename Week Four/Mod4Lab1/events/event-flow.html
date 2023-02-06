@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Flow</title>
+    <link rel="stylesheet" href="/css/main.css">
+
+
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <h2>
+                Elijah Schultz
+            </h2>
+            <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a>Dom</a>
+                    <ul>
+                        <li>
+                            <a href="/dom/accessing-node.html">Accessing A Node</a>
+                        </li>
+                        <li>
+                            <a href="/dom/accessing-nodes.html">Accessing Nodes</a>
+                        </li>
+                        <li>
+                            <a href="/dom/looping-nodes.html">Looping NodeLists</a>
+                        </li>
+                        <li>
+                            <a href="/dom/family.html">Parents, Children, and Siblings</a>
+                        </li>
+                        <li>
+                            <a href="/dom/add-remove-nodes.html">Removing Nodes</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Events</a>
+                    <ul>
+                        <li>
+                            <a href="/events/adding-events.html">Adding Events</a>
+                        </li>
+                        <li>
+                            <a href="/events/event-flow.html">Event Flow</a>
+                        </li>
+                        <li>
+                            <a href="/events/event-object.html">The Event Object</a>
+                        </li>
+                        <li>
+                            <a href="/events/event-types.html">Event Types</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/try-it.html">Try it</a>
+                </li>
+            </ul>
+
+            <h3>
+                Mod 4 Lab 1
+            </h3>
+        </nav>
+        <header>
+
+        </header>
+        <main>
+            <div class="nav-spacer">
+                /* Do not add content--this is only for spacing the nav bar */
+            </div>
+            <div class="main-container">
+                <div class="container">
+                    <h1>Event Flow</h1>
+                    <p>
+                        HTML elements nest inside other elements. If you hover or click on a link, you will also be hovering or clicking on its parent elements.
+                    </p>
+
+
+                    <div class="content">
+                        <h2>Event Bubbling</h2>
+                        <p>
+                            The event starts at the most specific node and flows outwards to the least specific node. This is the default behavior. 
+                        </p>
+                        <div class="content-split">
+                            <div class="flow-practice">
+                                <h3>
+                                    Practice
+                                </h3>
+                                <p>
+                                    Create two click event listeners, one for the button and one for the div the button is inside of. The button should alert &#x201C;Bubble Button&#x201D; and the div should alert &#x201C;Bubble Div.&#x201D; Click the button and note the order of the alerts. 
+                                </p>
+                                <div id="bubbleDiv" class="flow">
+                                    <input id="bubbleButton" type="button" value="Bubble Button" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <h2>Event Capturing</h2>
+                        <p>
+                            TThe event starts at the least specific node and flows inwards to the most specific one. Add a boolean of true as a third parameter to use event capturing.
+                        </p>
+                        <div class="content-split">
+                            <div class="flow-practice">
+                                <h3>
+                                    Practice
+                                </h3>
+                                <p>
+                                    Create two click event listeners, one for the button and one for the div the button is inside of. The button should alert “Capture Button” and the div should alert “Capture Div.” Click the button and note the order of the alerts. 
+                                </p>
+                                <div id="captureDiv" class="flow">
+                                    <input id="captureButton" type="button" value="Capture Button" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <footer>
+    </div>
+
+    </footer>
+    <script src="/js/events/event-flow.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html

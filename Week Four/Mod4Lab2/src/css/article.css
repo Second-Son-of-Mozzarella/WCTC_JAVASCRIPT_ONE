@@ -1,0 +1,93 @@
+
+/*Article styling*/
+
+
+.article-viewer {
+    display: flex;
+    gap: 30px;
+}
+
+.viewer-previews {
+    flex: 1;
+}
+
+
+.viewer-current {
+    flex: 3;
+}
+
+.viewer-current>h3 {
+    text-align: center;
+}
+
+.preview {
+    border-bottom: 1px solid var(--cust-main-color-light);
+    padding: 15px 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.preview:hover {
+    background-color: var(--cust-link-color);
+}
+.preview:hover>.preview-title,.preview:hover>.preview-author
+{
+    color: var(--cust-text-color-reverse);
+}
+
+.preview.active {
+    background-color: var(--cust-accent-color);
+}
+
+.preview.active>.preview-title,.preview.active>.preview-author
+{
+    color: var(--cust-text-color-reverse);
+}
+
+.preview>.preview-title {
+    font-family: var(--cust-typeface);
+    font-weight: 900;
+    display: block;
+    color: var(--cust-link-color);
+}
+
+.preview>.preview-author {
+    display: block;
+    color: var(--cust-accent-color);
+}
+
+.article {
+    background-color: var(--cust-main-color-light);
+    border-radius: 6px;
+    box-shadow: 3px 8px 5px 0px rgba(0,0,0,.2);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.article>h2{
+    border-bottom: 3px solid var(--cust-accent-color);
+    font-family: var(--cust-typeface);
+    font-size: 30px;
+}
+
+.article,.article>h2,.article>h3,.article>p,.article>.article-body>p {
+    color: var(--cust-text-color);
+}
+
+.article>.article-body{
+    text-align: justify;
+    font-size: 14px;
+}
+
+.article>img {
+    height: 300px;
+    width: 50%;
+    float: right;
+    object-fit: cover;
+    margin: 0px 0px 10px 10px;
+}
+.article>.article-information{
+    display: flex;
+    min-width: 100%;
+    margin-bottom: 10px;
+}

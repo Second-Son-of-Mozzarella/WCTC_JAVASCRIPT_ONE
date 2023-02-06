@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try It Directions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/main.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <nav>
+
+    </nav>
+    <main>
+        <div class="wrapper">
+            <div class="content">
+                <h1>Try It - To Do List</h1>
+                <p>Using jQuery create a To Do list that stores tasks.</p>
+                <h2>Part 1</h2>
+                <p>Add an event listener for the form that listens for a submit event. Upon submission, a function should do the following:
+                    <ul>
+                        <li>Use the event object to prevent the default functionality</li>
+                        <li>Append a new element to div.tasks. This element should be a div with the classes of task and low. Inside it should have an h3 with the task name and a p with the task description</li>
+                        <li>Reset the form</li>
+                    </ul>
+                </p>
+                <h2>Part 2</h2>
+                <p>Create an event listener to div.tasks that finds the closest div.task when clicked. A function should check the closest div.task and see if it has a class of low, high, or done. Based on which class the div has, the following should happen:
+                    <ul>
+                        <li>has low – remove low, add high</li>
+                        <li>has high – remove high, add done</li>
+                        <li>has done – remove done, add low</li>
+                    </ul>
+                </p>
+                <h2>Part 3</h2>
+                <p>Create an event listener for the Remove Completed Items button. Upon clicking this button, the button should fade out and every element with the class of done should slide up and be removed upon the completion of sliding up. </p>
+                
+                <h2>Finishing</h2>
+                <p>You must complete this during class and show the instructor or show the instructor your progress at the end of class. This should be the only task being worked on during lab time. Other work can be finished after. </p>
+
+                <h2>Example</h2>
+                <img src="/src/images/Example.gif">
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/src/js/menu.js"></script>
+    <script src="/src/js/tryIt/toDoList.js"></script>
+</body>
+</html>

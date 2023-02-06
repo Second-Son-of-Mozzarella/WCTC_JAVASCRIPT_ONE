@@ -1,0 +1,202 @@
+:root {
+    --cust-color-main: #1a1a1a;
+    --cust-color-main-hover: #4f4e4e;
+    --cust-color-accent:  #e8d588;  
+    --cust-color-text: #e8d588;
+    --cust-color-text-reverse: #e8d588;
+    --cust-color-link: #d9c780;
+    --cust-color-background: #e8d588;
+    --cust-color-background-Two: #4d4d4d;
+
+    
+    --cust-max-width: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+
+    background-color: var(--cust-color-background-Two);
+
+}
+
+header{
+    background-color: var(--cust-color-main);
+    color: var(--cust-color-text-reverse);
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 250px;
+    
+}
+
+nav{
+
+    background-color: var(--cust-color-accent);
+    color: var(--cust-color-text);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 269px;
+    font-size: small;
+    font-weight: bolder;
+   
+    
+
+}
+
+
+#viewFormBtn{
+
+    color: var(--cust-color-main);
+    float: left;
+    background-color: var(--cust-color-accent);
+   
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+
+
+}
+
+
+#viewMembersBtn{
+
+
+    color: var(--cust-color-main);
+    float: right;
+    background-color: var(--cust-color-accent);
+    
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.mainTab :hover{
+    background-color: var(--cust-color-main-hover);
+}
+
+
+
+.content-flex {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+#memberForm{
+
+    width: 200px;
+    margin: 0, auto;
+}
+
+#memberForm > input{
+    display: block;
+}
+
+
+#viewForm{
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border-radius: 5px;
+    background-color: var(--cust-color-main);
+    width: 250px;
+    padding: 50px;
+    line-height: 2;
+    color: var(--cust-color-background);
+}
+
+#viewMembers{
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border-radius: 5px;
+    background-color: var(--cust-color-main);
+    width: 250px;
+    padding: 50px;
+    line-height: 2;
+    color: var(--cust-color-background);
+    height: 500px;
+    
+}
+
+
+input[type='submit']{
+    border-radius: 2px;
+    padding: 5px;
+    font-weight: bold;
+    background-color: var(--cust-color-background);
+    border-color: var(--cust-color-link);
+}
+
+select{
+
+    padding: 2px;
+    font-weight: 800;
+
+}
+
+input[type='text'], input[type='date']{
+
+    padding: 2px;
+    text-indent: 5px;
+    font-weight: 800;
+
+}
+.member-list__students{
+
+    overflow-y: scroll;
+    height: 450px;
+}
+.member{
+
+    color: var(--cust-color-background);
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--cust-color-accent);
+    border-radius: 2px;
+    text-indent: 5px;
+    display: block;
+    line-height: normal;
+    padding: 3px;
+    margin: 5px;
+    
+    
+}
+
+.deleteBtn{
+
+    border-radius: 2px;
+    padding: 2px;
+    margin-top: 2px;
+    border-color: var(--cust-color-accent);
+    background-color: var(--cust-color-main);
+    color: var(--cust-color-accent);
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+
+.invalid{
+    background-color: lightcoral;
+}
+
